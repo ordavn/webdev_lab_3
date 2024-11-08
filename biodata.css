@@ -1,0 +1,114 @@
+body{
+    font-family: Helvetica;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Biodata{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/bg2.png);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    overflow: hidden;
+}
+.biodata-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.biodata-nav:hover {
+    background: rgba(8, 68, 117, 0.24);
+    backdrop-filter: blur(5px);
+}
+
+.biodata-nav nav {
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.biodata-nav .logo {
+    width: 125px;
+    margin-left: 20px;
+}
+
+.biodata-nav nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+.biodata-nav nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    text-shadow: 2px 2px 5px rgba(146, 204, 255, 1);
+}
+
+.Photo {
+    position: absolute; 
+    top: 30%; 
+    right: 100px;
+    z-index: 1; 
+}
+
+.image-position {
+    width: 450px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+.Biodata-Content {
+    margin-top: 10%;
+    padding: 0 20px;
+    margin-left: 40px;
+    text-shadow: 5px 2px 5px rgba(160, 191, 240, 1);
+}
+
+.Biodata-Content h1 {
+    font-size: 40px;
+    color: rgb(60, 61, 51);
+    margin: 10px 0;
+    white-space: nowrap;
+    line-height: 50px;
+}
+
+.Information {
+    display: block;
+    background-color: rgba(59, 77, 107, 0.79); 
+    padding: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 48%;
+}
+
+.Row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.label {
+    background-color: #0a0a0a;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.value {
+    padding: 5px 10px;
+    flex-grow: 1;
+    margin-left: 10px;
+}
